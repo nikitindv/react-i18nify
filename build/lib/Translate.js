@@ -61,12 +61,4 @@ var Translate = function (_BaseComponent) {
   return Translate;
 }(_Base2.default);
 
-Translate.propTypes = {
-  value: _react2.default.PropTypes.string.isRequired,
-  dangerousHTML: _react2.default.PropTypes.bool,
-  /**
-   * Optional styling
-   */
-  style: _react2.default.PropTypes.objectOf(_react2.default.PropTypes.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string]))
-};
 exports.default = Translate;

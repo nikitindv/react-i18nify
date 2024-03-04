@@ -8,22 +8,7 @@ import BaseComponent from './Base';
 export default class Localize extends BaseComponent {
 
   static propTypes = {
-    value: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-      React.PropTypes.object]).isRequired,
-    options: React.PropTypes.object,
-    dateFormat: React.PropTypes.string,
-    dangerousHTML: React.PropTypes.bool,
-    /**
-     * Optional styling
-     */
-    style: React.PropTypes.objectOf(
-      React.PropTypes.oneOfType([
-        React.PropTypes.number,
-        React.PropTypes.string,
-      ])
-    ),
+
   };
 
   render = () => {

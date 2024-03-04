@@ -55,14 +55,4 @@ var Localize = function (_BaseComponent) {
   return Localize;
 }(_Base2.default);
 
-Localize.propTypes = {
-  value: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number, _react2.default.PropTypes.object]).isRequired,
-  options: _react2.default.PropTypes.object,
-  dateFormat: _react2.default.PropTypes.string,
-  dangerousHTML: _react2.default.PropTypes.bool,
-  /**
-   * Optional styling
-   */
-  style: _react2.default.PropTypes.objectOf(_react2.default.PropTypes.oneOfType([_react2.default.PropTypes.number, _react2.default.PropTypes.string]))
-};
 exports.default = Localize;
