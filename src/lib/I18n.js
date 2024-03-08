@@ -1,7 +1,6 @@
 /* eslint no-underscore-dangle: "off" */
 
-import moment from 'moment';
-import 'moment/min/locales';
+import moment from 'moment/moment';
 import IntlPolyfill from 'intl';
 import formatMissingTranslation from './formatMissingTranslation';
 import BaseComponent from './Base';

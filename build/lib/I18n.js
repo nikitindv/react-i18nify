@@ -4,11 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _moment = require('moment');
+var _moment = require('moment/moment');
 
 var _moment2 = _interopRequireDefault(_moment);
-
-require('moment/min/locales');
 
 var _intl = require('intl');
 
