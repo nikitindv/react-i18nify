@@ -8,10 +8,6 @@ var _moment = require('moment/moment');
 
 var _moment2 = _interopRequireDefault(_moment);
 
-var _intl = require('intl');
-
-var _intl2 = _interopRequireDefault(_intl);
-
 var _formatMissingTranslation = require('./formatMissingTranslation');
 
 var _formatMissingTranslation2 = _interopRequireDefault(_formatMissingTranslation);
@@ -133,13 +129,10 @@ exports.default = {
       return (0, _moment2.default)(value).format(this.t(options.dateFormat));
     }
     if (typeof value === 'number') {
-      if (global.Intl) {
-        if (!(Intl.NumberFormat && Intl.NumberFormat.supportedLocalesOf(this._locale).length === 1)) {
-          Intl.NumberFormat = _intl2.default.NumberFormat;
-        }
-      } else {
-        global.Intl = _intl2.default;
+      if (!(Intl.NumberFormat && Intl.NumberFormat.supportedLocalesOf(this._locale).length === 1)) {
+        Intl.NumberFormat = _intl2.default.NumberFormat;
       }
+
       return new Intl.NumberFormat(this._locale, options).format(value);
     }
     return value;
