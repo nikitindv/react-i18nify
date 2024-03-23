@@ -25,9 +25,8 @@
   ],
   "tonicExampleFilename": "example.js",
   "dependencies": {
-    "intl": "^1.2",
-    "moment": "^2.13.0",
-    "react": "^15.1.0"
+    "moment": ">2.13.0",
+    "react": ">15.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",
